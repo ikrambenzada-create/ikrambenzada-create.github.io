@@ -1,0 +1,51 @@
+@import url(https://fonts.bunny.net/css?family=allura:400);
+body {
+  background-color: ##eee8d5;
+  color: #657b83;
+  font-family: 'Allura', handwriting;
+  background-image: url("images/drapeau_fr.jpg");
+  background-size: 1350px
+}
+p {
+  font-size: 25px;
+}
+h1 {
+  color: #013b64;
+}
+a {
+  color: #1c9a46;
+  font-size: 20px;
+}
+a:hover,
+a:focus {
+  color: #6d0707 ;
+  text-decoration: none;
+}
+.Recommencer {
+    color:  #859900 ;
+}
+.carte {
+    background-image: url("images/macarons.jpg");
+    background-size: auto;
+}
+.photo-france img {
+  width: 150px; 
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo-france img:hover {
+  transform: scale(1.1); 
+  
+  animation: secousse-meme 0.5s ease-in-out infinite;
+}
+
+@keyframes secousse-meme {
+  0% { transform: scale(1.1) rotate(0deg); }
+  25% { transform: scale(1.1) rotate(3deg); }
+  50% { transform: scale(1.1) rotate(-3deg); }
+  75% { transform: scale(1.1) rotate(3deg); }
+  100% { transform: scale(1.1) rotate(0deg); }
+}
